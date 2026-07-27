@@ -12,7 +12,7 @@ conda install -c conda-forge rdkit obabel
 
 For MacOS/Linux start the VADocker GUI with following command
 
-python dock_gui3.py
+python dock_gui1.py
 
 💻 Command Line Interface (CLI) UsageFor batch processing on compute clusters or automated shell scripts, you can bypass the GUI and invoke the backend engines directly.
 Global CLI ArgumentsArgumentDescriptionDefault--receptorPath to the target protein PDB file (Required).---ligandPath to a single ligand file (.pdb, .sdf, .mol2).---ligandsPath to a directory for batch processing multiple ligands.---outDestination directory for output files and CSV summaries.---centerActive site geometric center (X Y Z).---sizeSearch grid box size in Ångströms.20.0--translation-stepGrid node spatial resolution in Ångströms.1.5--rotation-stepAngular rotation step size in degrees.20.0--scoringActive scoring engine (empirical, amber, gnina_ml).empirical--top-posesNumber of top hit poses to save per ligand.10--coresNumber of CPU cores to dedicate to the worker pool. All available
